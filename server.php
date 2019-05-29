@@ -24,16 +24,22 @@ $headers = "From: Администратор сайта\r\n".
 "MIME-Version: 1.0" . "\r\n" .
 "Content-type: text/html; charset=UTF-8" . "\r\n";
 $mail = mail('vlad_dvorcov@mail.ru' , 'Сообщение' , $mail_message , $headers);
-$data= [];
-if ($mail) {
-     $data['status'] = "OK";
-     $data['mes'] = "Письмо успешно отправлено";
-}else{
-    $data['status' ]= "NO";
-    $data['mes'] = "На сервере произошла ошибка";
+if(mail('vlad_dvorcov@mail.ru' , 'Сообщение' , $mail_message , $headers)){
+    echo"сообщение успешно отправлено"; 
+} else { 
+    echo "при отправке сообщения возникли ошибки";
 }
 
+// $data= [];
+// if ($mail) {
+//      $data['status'] = "OK";
+//      $data['mes'] = "Письмо успешно отправлено";
+// }else{
+//     $data['status' ]= "NO";
+//     $data['mes'] = "На сервере произошла ошибка";
+// }
 
-echo json_encode($data);
+
+// echo json_encode($data);
 
 ?>
