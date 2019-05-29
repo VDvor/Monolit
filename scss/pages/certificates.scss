@@ -1,0 +1,23 @@
+.headline__certificates{
+    text-align: start;
+}
+.certificates__list {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+   
+}
+.certificates__item{    
+    height: 375px;
+    width: 280px;
+    background: #ffffff;
+    box-shadow: 0 0 10px $violet;
+    margin-bottom: 30px;
+    margin-right: 100px;
+    &:nth-child(even){
+        margin-right: 0;
+    }
+}

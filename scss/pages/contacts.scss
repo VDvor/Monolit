@@ -1,0 +1,31 @@
+.communications {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 80px;
+}
+
+.headline__communication {
+    text-align: start;
+    margin-bottom: 0px;
+}
+
+.contact {
+    margin-left: 30px;
+}
+
+.map {
+    width: 860px;
+    height: 510px;
+    background: $violet;
+    margin-top: 35px;
+
+}
+
+.communication__text {
+    font-size: 18px;
+
+    .address {
+        margin-left: 0px;
+    }
+}

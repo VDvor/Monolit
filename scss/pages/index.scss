@@ -1,0 +1,137 @@
+.we__caption {
+    text-align: center;
+    font-size: 48px;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.we__text {
+    font-size: 28px;
+}
+
+.services__list {
+    display: flex;
+    justify-content: center;
+}
+
+.services__item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;    
+    a{
+        color: #000;
+        text-decoration: none;
+    }
+    
+   
+}
+
+.services__img {
+    height: 260px;
+    width: 260px;
+    background: $violet;
+    margin-bottom: 30px;
+}
+
+.services__text {
+    text-align: center;
+    font-size: 20px;
+}
+
+@each $services in (1, 2, 3, 4) {
+    .services__item:nth-child(#{$services}) {
+        .services__img {
+            background: url(../img/services/#{$services}.jpg);
+            @include cover;
+        }
+    }
+}
+
+.work__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.work__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 125px;
+    width: 300px;
+
+    &:nth-child(3) {
+        margin-right: 0;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+}
+
+
+.work__img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+@each $work in (call, consultation, variants, show, conversation, deal) {
+    .work__img_#{$work} {
+        background: url(../img/work/#{$work}.jpg);
+        @include cover;
+    }
+
+}
+
+.work__text {
+    text-align: center;
+    margin-bottom: 45px;
+    font-size: 20px;
+
+}
+
+.advantages__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.advantages__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 50px;
+    width: 300px;
+
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+.advantages__img {
+    width: 165px;
+    height: 165px;
+    background: url("../img/advantage/security.jpg");
+}
+
+@each $advantages in (security, benefit, success) {
+    .advantages__img_#{$advantages} {
+        background: url(../img/advantage/#{$advantages}.jpg);
+        @include cover;
+    }
+
+}
+
+.advantages__caption {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.advantages__text {
+    text-align: center;
+}

@@ -1,0 +1,68 @@
+.maincontent {
+    display: flex;
+    margin-bottom: 65px;
+}
+
+.header__location,
+.header__logo,
+.header__phone {
+    flex: 1;
+    padding-top: 60px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.header__location {
+    padding-left: 25px;
+    justify-content: flex-start;
+}
+
+.header__logo {
+    align-items: center;
+    justify-content: center;
+}
+
+.header__phone {
+    padding-right: 25px;
+    justify-content: flex-end;
+}
+
+.phone__text,
+.address {
+    margin-left: 25px;
+}
+
+.menu {
+    background-color: $violet;
+
+    margin: 0;
+
+    div {
+        margin-right: 20px;
+        flex: 1;
+
+    }
+
+    div:last-child {
+        margin-right: 0;
+    }
+}
+
+.menu-container {
+    display: flex;
+    height: 55px;
+    padding: 20px 35px;
+
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    div {
+        &:hover {
+            text-decoration: underline;
+
+        }
+    }
+}

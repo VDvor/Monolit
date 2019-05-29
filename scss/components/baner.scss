@@ -1,0 +1,5 @@
+.baner{
+    background: url('../img/baner.png');
+    @include cover;
+    height: 322px;
+}

@@ -1,0 +1,27 @@
+$violet: #703cdb;
+// layout
+@import "layout/fonts";
+@import "layout/base";
+@import "config/mixins";
+
+// компоненты
+@import "components/header";
+@import "components/baner";
+@import "components/realty";
+@import "components/footer";
+@import "components/headline";
+@import "components/breadcrumbs";
+@import "components/question__form";
+
+// страницы
+
+@import "pages/index";
+@import "pages/contacts";
+@import "pages/company";
+@import "pages/banks";
+@import "pages/services";
+@import "pages/certificates";
+
+
+
+

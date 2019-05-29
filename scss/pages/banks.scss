@@ -1,0 +1,24 @@
+.headline__bank{
+    text-align: start;
+}
+.bank__list {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@each $banks in (sber, vtb) {
+    .#{$banks} {
+        background: url(../img/banks/#{$banks}.png);
+        @include cover;
+        width: 375px;
+        height: 280px;
+        margin-right: 100px;
+    }
+
+}
+.bank__item:nth-child(even){
+    margin-right: 0;
+}

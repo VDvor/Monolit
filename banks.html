@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Банки партнёры</title>
+    <link rel="stylesheet" href="scss/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- header -->
+        <header class="header">
+            <div class="conteiner maincontent">
+                <div class="header__location">
+                    <div class="location__img">
+                        <img src="img/header/location.png" alt="">
+                    </div>
+                    <div class="address">
+                        г. Брянск
+                        <br> ул. Ромашина, д.1, оф.4
+                    </div>
+
+                </div>
+                <a href="index.html" class="header__logo">
+                    <img src="img/logo.jpg" alt="" class="logo">
+                </a>
+                <div class="header__phone">
+                    <div class="phone__img">
+                        <img src="img/header/phone.png" alt="">
+                    </div>
+                    <div class="phone__text">8(4832)34-55-88</div>
+                </div>
+            </div>
+
+        </header>
+        <!-- меню -->
+        <menu class="menu">
+            <div class="menu-container">
+                <div class="main"> <a href="index.html">Главная</a> </div>
+                <div class="company"><a href="company.html">О компании</a> </div>
+                <div class="services"><a href="services.html">Услуги</a> </div>
+                <div class="Certificates"><a href="certificates.html">Сертификаты</a> </div>
+                <div class="partners"><a href="banks.html">Банки партнёры</a> </div>
+                <div class="contacts"><a href="contacts.html">Контакты</a> </div>
+            </div>
+        </menu>
+        <div class="conteiner">
+            <div class="firm">
+                <!-- форма -->
+                <div class="sidebar">
+                    <form action="server.php" method="post" id="question-form">
+                        <div class="question__form">
+                            <div class="question__form-caption">
+                                Задайте вопрос
+                            </div>
+                            <div class="question__form-row">
+                                <input id="user-name" name="user-name" type="text"
+                                    class="question__form-input question__form-input_name" placeholder="Ваше имя">
+                            </div>
+                            <div class="question__form-row">
+                                <input id="user-phone" name="user-phone" type="text"
+                                    class="question__form-input question__form-input_phone"
+                                    placeholder="Контактный номер">
+                            </div>
+                            <div class="question__form-row">
+                                <textarea id="user-message" name="user-message" class="question__form-input_message"
+                                    placeholder="Сообщение" rows="10"></textarea>
+                            </div>
+                            <div class="question__form-row question__form-row_checkbox">
+                                <input id="user-checkbox" name="user-checkbox" type="checkbox"
+                                    class="question__form-checked">
+                                <div class="question_checkbox-title">Я согласен с политикой конфиденциальности</div>
+                            </div>
+                            <div class="question__form-row">
+                                <input type="submit" value="Отправить сообщение" class="question__form-button">
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="contact">
+                    <div class="breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item"> <a href="index.html" class="breadcrumbs_link">Главная</a>
+                            </li>
+                            <li class="breadcrumbs__item breadcrumbs__item_active"> <a href=""
+                                    class=" breadcrumbs_link ">Банки партнёры</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="banks">
+                        <div class="headline headline__bank">Банки партнёры</div>
+                        <ul class="bank__list">
+                            <li class="bank__item sber"></li>
+                            <li class="bank__item vtb"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <div class="name">
+            © Монолит
+        </div>
+        <div class="footer__location">
+            <div class="address">
+                г. Брянск
+                ул. Ромашина, д.1, оф.4
+            </div>
+            <div class="phone__text">8 (4832) 34-55-88</div>
+        </div>
+    </footer>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

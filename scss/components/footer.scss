@@ -1,0 +1,26 @@
+footer {
+    height: 80px;
+    color: #ffffff;
+    margin-top: -80px;
+    min-width: 1100px;
+    background: $violet;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.name,
+.arrow,
+.footer__location {
+    margin: 15px 20px;
+    font-size: 17px;
+    color: #ffffff;
+}
+
+.footer__location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+
+}

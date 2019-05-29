@@ -1,0 +1,31 @@
+.realty{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.realty__item{
+    height: 315px;
+    margin-right: 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.realty__item:last-child{
+    margin-right: 0px;
+}
+.realty__item__img{
+    width: 265px;
+
+    height: 240px;
+}
+
+@each $realty in (apartments, rooms, houses, plots) {
+    .realty_#{$realty}{
+        background: url(../img/realty/#{$realty}.jpg);
+        @include cover;
+    }
+    
+}

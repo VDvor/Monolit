@@ -1,0 +1,67 @@
+.sidebar{
+    width: 266px;
+    height: 550px;
+    margin-left: 20px;
+    border:  2px solid #c0bdb6;
+    border-radius: 5px;
+    padding: 15px 10px 24px;
+    
+}
+.question__form-caption {
+    color: $violet;
+    font-size: 36px;
+    margin-bottom: 24px;
+}
+
+.question__form-row {
+    margin-bottom: 15px;
+
+}
+
+.question__form-input,
+.question__form-input_message {
+    width: 245px;
+    border-radius: 5px;
+    border: 2px solid #c0bdb6;
+    padding-left: 30px;
+
+
+}
+
+.question__form-input {
+    height: 55px;
+}
+
+.question__form-input_message::placeholder {
+    font-size: 16px;
+}
+
+.question__form-row_checkbox {
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+
+}
+
+.question__form-checked {
+    margin-right: 13px;
+}
+.question__form-button{
+    width: 240px;
+    height: 55px;
+    color: #fff;
+    background-color: $violet;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.question__form-input_name{
+    background: url('../img/form/user-name.png') 7px 50% no-repeat;
+}
+.question__form-input_phone{
+    background: url('../img/form/user-phone.png') 7px 50% no-repeat;
+}
+.question__form-input_message{
+    background: url('../img/form/message.png') 7px 7px no-repeat;
+}
